@@ -1,0 +1,49 @@
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #adadad;
+    border-radius: 20px;
+    border: 1px solid #9d9d9d;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  .hoverNav{
+    font-weight: 600;
+    border-left: 2px solid transparent;
+    transition: all 0.01s ease-in-out;
+    cursor: pointer;
+  }
+  .hoverNav:hover{
+    color: #2bb1da;
+  }
+  .Search-btn{
+    width: 60px;
+    height: 33px;
+    font-size: 16px;
+    background: #4781b5;
+    transition: all 0.25s ease-in-out;
+  }
+  .Search-btn:hover{
+    background-color: #4b75b9;
+    transform: scale(0.95);
+  }
+  .Search-btn:active{
+    transform: scale(1.01);
+  }
+  .okactive{
+    border-left: 2px solid #2bb1da;
+    color: #2bb1da;
+  }
+  .hidden{
+    display: none;
+  }
