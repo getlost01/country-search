@@ -54,18 +54,19 @@
     color: #d6d6d6;
   }
   .Search-btn{
+    position:relative;
+    right: 0;
     width: 60px;
-    height: 33px;
+    height: 35px;
     font-size: 16px;
     background: #4781b5;
     transition: all 0.25s ease-in-out;
   }
   .Search-btn:hover{
     background-color: #4b75b9;
-    transform: scale(0.95);
   }
   .Search-btn:active{
-    transform: scale(1.01);
+    background-color: #29569f;
   }
   .okactive{
     border-left: 2px solid #2bb1da;
@@ -106,9 +107,10 @@
     color: red;
   }
   .btn-custom{
-    width: 105px;
+    width: 100px;
     margin: 5px 0 0 10px;
     border-radius: 5px;
+    font-size: 14px;
     background-color: #163464;
     border: 1px solid #163464;
     color: aliceblue;
@@ -136,4 +138,24 @@
       font-size: 13px;
       color: #163464;
     }
+    .table-style{
+      font-size: 12px;
+    }
+    .Search-btn{
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .table-style{
+      font-size: 14px;
+    }
+  }
+
+
+  @media screen and (max-width: 500px) {
+    .table-style{
+      font-size: 10px;
+    }
+    
   }

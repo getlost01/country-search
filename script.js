@@ -164,7 +164,7 @@ function fetchFull(country){
                     <th scope="col">Description</th>
                     </tr>
             </thead>
-            <tbody>
+            <tbody class="table-style">
                 <tr>
                 <th scope="row">1</th>
                 <td>Official Name</td>
