@@ -19,20 +19,19 @@
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    
 </head>
 <body style="background-color: aliceblue; overflow:hidden;">
     <!-- header -->
 
-    <div class="absolute left-0 top-4 z-10 ps-4 d-flex justify-content-start align-items-center ">
+    <div class="absolute left-0 top-4 z-10 ps-3 d-flex justify-content-start align-items-center ">
         <div class="box bg-white border border-grey d-flex justify-content-center align-items-center rounded w-10 h-10 cursor-pointer" id="toogle">
-            <i class="text-2xl fa-solid fa-angles-right"></i>
+            <i class="text-2xl fa-solid fa-angles-left" id="topArrow"></i>
         </div>
     </div>
 
-    <div class="absolute right-0 top-4 z-10 pe-4 d-flex justify-content-center align-items-center "">
-        <div class="box bg-white border border-grey d-flex justify-content-center align-items-center rounded w-20 h-10 cursor-pointer" id="doc">
-            <p class="text-lg">Docs</p>
+    <div class="absolute right-0 top-5 z-10 pe-3 d-flex justify-content-center align-items-center ">
+        <div class="box bg-white border border-grey d-flex justify-content-center align-items-center rounded w-12 h-8 cursor-pointer" id="docs">
+            <p class="text-md">Docs</p>
         </div>
     </div>
 
@@ -44,22 +43,26 @@
     </div>
 
 
-
-
    <!-- nav bar -->
     <div class="row ">
-        <div class="sidebar fixed bottom-0 lg:left-0 -left-80 overflow-y-auto border-end border-dark" style="width: 250px; top: 72px; background-color: #202e56;">
+        <div class="sidebar z-10 fixed bottom-0 lg:left-0 -left-80 overflow-y-auto border-end border-dark" style="width: 250px; top: 72px; background-color: #202e56;" id="nav1">
                 <div class="d-flex justify-content-center flex-column text-white">
-                    <h3 class=" text-lg py-2 mb-2 border-bottom">Select your searching type</h3>
-                    <div class="col-12 p-2 hoverNav" style="width: 220px;" id="all"><p>Show All Countries</p></div>
-                    <h3 class=" text-lg py-2 mb-2 border-bottom ">Search Countries by</h3>
-                    <div class="col-12 p-2 hoverNav okactive" style="width: 220px;" id="name"><p>Countries by name</p></div>
-                    <div class="col-12 p-2 hoverNav" style="width: 220px;" id="capital"><p>Countries by capital name</p></div>
-                    <div class="col-12 p-2 hoverNav" style="width: 220px;" id="currency"><p>Countries by currency</p></div>
-                    <div class="col-12 p-2 hoverNav" style="width: 220px;" id="lang"><p>Countries by language</p></div>
-                    <div class="col-12 p-2 hoverNav" style="width: 220px;" id="region"><p>Countries by region</p></div>
-                    <div class="col-12 p-2 hoverNav" style="width: 220px;" id="subregion"><p>Countries by sub-region</p></div>
-            </div>
+                    <h3 class=" text-lg my-2 py-1 border-bottom" style="width: 237px;">Select searching type</h3>
+                    <div class="col-12 px-2 py-1 hoverNav" style="width: 220px;" id="all"><p>Show all Countries</p></div>
+                    <h3 class=" text-lg py-1 mb-2 border-bottom " style="width: 237px;">Search Countries by</h3>
+                    <div class="col-12 px-2 py-1 hoverNav okactive" style="width: 220px;" id="name"><p>Countries by name</p></div>
+                    <div class="col-12 px-2 py-1 hoverNav" style="width: 220px;" id="capital"><p>Countries by capital name</p></div>
+                    <div class="col-12 px-2 py-1 hoverNav" style="width: 220px;" id="currency"><p>Countries by currency</p></div>
+                    <div class="col-12 px-2 py-1 hoverNav" style="width: 220px;" id="lang"><p>Countries by language</p></div>
+                    <div class="col-12 px-2 py-1 hoverNav" style="width: 220px;" id="region"><p>Countries by region</p></div>
+                    <div class="col-12 px-2 py-1 hoverNav" style="width: 220px;" id="subregion"><p>Countries by sub-region</p></div>
+                    <div class="col-12 mt-5 d-flex justify-content-center py-1" style="width: 220px;"><p>Copyright @Aagam</p></div>
+                    <div class="col-12 px-4 d-flex justify-content-center py-1" style="width: 220px;">
+                        <a href="https://www.linkedin.com/in/aagam-jain-gl01/" target="_blank"><i class="f fa-brands px-2 cursor-pointer text-2xl fa-linkedin"></i></a>
+                        <a href="https://github.com/getlost01" target="_blank"><i class="f fa-brands px-2 text-2xl cursor-pointer fa-github-square"></i></a>
+                        <a href="https://portfolio-de-aagam.netlify.app/" target="_blank"><i class="f fa-solid px-2 text-2xl cursor-pointer fa-globe"></i></a>
+                    </div>
+                </div>
         </div>
     </div>
 
@@ -68,9 +71,46 @@
 
 
     <!-- nav bar2 -->
-    <div class="row ">
-        <div class="sidebar fixed bottom-0 lg:right-0 -right-80 overflow-y-auto border-start border-dark" style="width: 200px; top: 72px; background-color: #202e56;">
-            
+    <div class="row">
+        <div class=" fixed bottom-0 lg:right-0 -right-80 overflow-y-auto border-start border-dark" style="width: 200px; top: 72px; background-color: #202e56;z-index: 22;" id="nav2">
+                <div class="d-flex justify-content-center flex-column text-white">
+
+                <h3 class=" text-lg my-2" style="width: 175px;"> <i class="fa-solid fa-play"></i> Documentation</h3>
+
+                <div class="col-12 pt-3 text-md" style="width: 170px;" ><p>Show all countries:</p></div>
+                <div class="col-12 text-sm " style="width: 170px;" >
+                <p>Using the show all option, users can browse all 250 countries at the same time.</p></div>
+
+                <div class="col-12 pt-3 text-md" style="width: 170px;" ><p>Search by name:</p></div>
+                <div class="col-12 text-sm " style="width: 170px;" >
+                <p>Using this, users can search any country with its full / partial name.</p></div>
+
+                <div class="col-12 pt-3 text-md" style="width: 170px;" ><p>Search by capital:</p></div>
+                <div class="col-12 text-sm " style="width: 170px;" >
+                <p>Using this, users can search for a country by its full / partial capital city name.</p></div>
+
+
+                <div class="col-12 pt-3 text-md" style="width: 170px;" ><p>Show all currency:</p></div>
+                <div class="col-12 text-sm " style="width: 170px;" >
+                <p>Using this, the user can search the country by its full / partial used currency name.</p></div>
+
+                <div class="col-12 pt-3 text-md" style="width: 170px;" ><p>Search by language:</p></div>
+                <div class="col-12 text-sm " style="width: 170px;" >
+                <p>Using this, users can search any country by its spoken language.</p></div>
+
+                <div class="col-12 pt-3 text-md" style="width: 170px;" ><p>Search by region:</p></div>
+                <div class="col-12 text-sm " style="width: 170px;" >
+                <p>Using this, user can search country by its full / partial region or continent name.</p></div>
+                  
+                <div class="col-12 pt-3 text-md" style="width: 170px;" ><p>Search by sub-region:</p></div>
+                <div class="col-12 text-sm " style="width: 170px;" >
+                <p>Using this, user can search country by its full / partial region or continent name.</p></div>
+                  
+                <div class="col-12 pt-5 text-md" style="width: 170px;" ><p>Visit :</p></div>
+                <div class="col-12 text-sm " style="width: 170px;" >
+                <p><a href="https://restcountries.com/" target="_blank"> https://restcountries.com</a> for more details.</p></div>
+
+             </div>
         </div>
     </div> 
 
@@ -79,134 +119,26 @@
 
 
     <!-- Main-con -->
-    <div class="row fixed p-2 right-0 left-0 lg:left-64 lg:right-52" style="top:72px; overflow-y: scroll;">
+    <div class="row z-1 fixed p-2 right-0 left-0 lg:left-64 lg:right-52" style="top:72px; overflow-y: scroll;">
          <div class="col-12 p-2 mt-3 mb-2 d-flex justify-content-center " style="height:50px;">
                 <div class="rounded border border-dark bg-dark text-white shadow cursor-pointer" style="overflow: hidden;" id="searchCon">
                     <i class="p-2 fa-solid fa-magnifying-glass"></i>
                     <input class="text-lg pe-2 focus:outline-none bg-transparent" placeholder="Search name" type="text" id="searchItem">
                     <input class="Search-btn" type="button" value="Search" id="searchBtn">
                 </div>
-                <div class="absolute right-5">
-                    <div class="dropdown">
-                        <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        Sort
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </div>
+                <div class="absolute left-5">
+                    <i class="fa-solid fa-arrow-left hidden text-2xl cursor-pointer" id="backArrow"></i>
                 </div>
+
+                    <div class="absolute right-6 hidden" id="loading">
+                       <div class="loader"></div>
+                       <h1>Loading...</h1>
+                    </div>
+         
          </div>
-
+         
          <div class="con p-4" style="height:80vh; overflow-y: scroll;" id="mainCon">
-            <div class="row my-2">
-                
-                <div class="col-12 border border-dark p-3 rounded shadow d-flex">
-                    <img class="h-10 w-10" src="/images/logo.png" alt="++">
-                    <!-- <h4>India </h4>
-                    <h5>New Delhi</h5> -->
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima magni minus natus ab corporis laboriosam sit exercitationem consectetur mollitia temporibus ipsum culpa ratione atque quos suscipit impedit, odit sunt reiciendis?</p>
-                 </div>
-                 
-            </div>
 
-            <div class="row my-2">
-                
-                <div class="col-12 border border-dark p-3 rounded shadow d-flex">
-                    <img class="h-10 w-10" src="/images/logo.png" alt="++">
-                     <h4>
-
-                     </h4>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima magni minus natus ab corporis laboriosam sit exercitationem consectetur mollitia temporibus ipsum culpa ratione atque quos suscipit impedit, odit sunt reiciendis?</p>
-                 </div>
-                 
-            </div>
-
-
-            <div class="row my-2">
-                
-                <div class="col-12 border border-dark p-3 rounded shadow d-flex">
-                    <img class="h-10 w-10 p-1" src="/images/logo.png" alt="++">
-                    <!-- <h4>India </h4>
-                    <h5>New Delhi</h5> -->
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima magni minus natus ab corporis laboriosam sit exercitationem consectetur mollitia temporibus ipsum culpa ratione atque quos suscipit impedit, odit sunt reiciendis?</p>
-                 </div>
-                 
-            </div>
-
-
-            <div class="row my-2">
-                
-                <div class="col-12 border border-dark p-3 rounded shadow d-flex">
-                    <img class="h-10 w-10" src="/images/logo.png" alt="++">
-                    <!-- <h4>India </h4>
-                    <h5>New Delhi</h5> -->
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima magni minus natus ab corporis laboriosam sit exercitationem consectetur mollitia temporibus ipsum culpa ratione atque quos suscipit impedit, odit sunt reiciendis?</p>
-                 </div>
-                 
-            </div>
-
-
-            <div class="row my-2">
-                
-                <div class="col-12 border border-dark p-3 rounded shadow d-flex">
-                    <img class="h-10 w-10" src="/images/logo.png" alt="++">
-                    <!-- <h4>India </h4>
-                    <h5>New Delhi</h5> -->
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima magni minus natus ab corporis laboriosam sit exercitationem consectetur mollitia temporibus ipsum culpa ratione atque quos suscipit impedit, odit sunt reiciendis?</p>
-                 </div>
-                 
-            </div>
-
-
-            <div class="row my-2">
-                
-                <div class="col-12 border border-dark p-3 rounded shadow d-flex">
-                    <img class="h-10 w-10" src="/images/logo.png" alt="++">
-                    <!-- <h4>India </h4>
-                    <h5>New Delhi</h5> -->
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima magni minus natus ab corporis laboriosam sit exercitationem consectetur mollitia temporibus ipsum culpa ratione atque quos suscipit impedit, odit sunt reiciendis?</p>
-                 </div>
-                 
-            </div>
-
-
-            <div class="row my-2">
-                
-                <div class="col-12 border border-dark p-3 rounded shadow d-flex">
-                    <img class="h-10 w-10" src="/images/logo.png" alt="++">
-                    <!-- <h4>India </h4>
-                    <h5>New Delhi</h5> -->
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima magni minus natus ab corporis laboriosam sit exercitationem consectetur mollitia temporibus ipsum culpa ratione atque quos suscipit impedit, odit sunt reiciendis?</p>
-                 </div>
-                 
-            </div>
-
-
-            <div class="row my-2">
-                
-                <div class="col-12 border border-dark p-3 rounded shadow d-flex">
-                    <img class="h-10 w-10" src="/images/logo.png" alt="++">
-                    <!-- <h4>India </h4>
-                    <h5>New Delhi</h5> -->
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima magni minus natus ab corporis laboriosam sit exercitationem consectetur mollitia temporibus ipsum culpa ratione atque quos suscipit impedit, odit sunt reiciendis?</p>
-                 </div>
-                 
-            </div>
-
-
-            <div class="row my-2">
-                
-                <div class="col-12 border border-dark p-3 rounded shadow d-flex">
-                    <img class="h-10 w-10" src="/images/logo.png" alt="++">
-                    <!-- <h4>India </h4>
-                    <h5>New Delhi</h5> -->
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima magni minus natus ab corporis laboriosam sit exercitationem consectetur mollitia temporibus ipsum culpa ratione atque quos suscipit impedit, odit sunt reiciendis?</p>
-                 </div>
-                 
-            </div>
          </div>
       </div>
  
@@ -219,3 +151,5 @@
     <script src="/script.js"></script>
 </body>
 </html>
+
+
