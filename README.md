@@ -4,6 +4,9 @@ In this project I have to create a country searching web app, which can search d
 For completion of assignment, DT provides a rest countries API  to fetch all countries' details.<BR>
 I find this API so interesting so I suggest this API for others also (Visit [Restcountries](https://restcountries.com/) and read documentation.)<br>
   
+### Technology used
+HTML , CSS ,Tailwind CSS, Bootstap and Javascript 
+  
 ## Task Detail
 All the information related to task is [here](https://docs.google.com/document/d/1alJPeb89FhMoE4QvT9RUujdrP7pwAU2NjTVQwEqurYo/edit)
 
