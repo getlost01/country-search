@@ -6,6 +6,9 @@ I find this API so interesting so I suggest this API for others also (Visit [Res
   
 ### Technology used
 HTML , CSS ,Tailwind CSS, Bootstap and Javascript 
+ 
+### Preview
+<img width="700" alt="Screenshot 2022-06-05 at 1 47 31 PM" src=https://github.com/getlost01/temp/blob/main/GIF-220624_195913.gif>
   
 ## Task Detail
 All the information related to task is [here](https://docs.google.com/document/d/1alJPeb89FhMoE4QvT9RUujdrP7pwAU2NjTVQwEqurYo/edit)
