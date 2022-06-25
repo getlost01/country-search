@@ -5,7 +5,7 @@ For completion of assignment, DT provides a rest countries API  to fetch all cou
 I find this API so interesting so I suggest this API for others also (Visit [Restcountries](https://restcountries.com/) and read documentation.)<br>
   
 ### Technology used
-HTML , CSS ,Tailwind CSS, Bootstap and Javascript 
+HTML , CSS ,Tailwind CSS, Bootstrap and Javascript 
  
 ### Preview
 <img width="700" alt="Screenshot 2022-06-05 at 1 47 31 PM" src=https://github.com/getlost01/temp/blob/main/GIF-220624_195913.gif>
